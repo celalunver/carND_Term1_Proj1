@@ -1,18 +1,11 @@
-Finding Lane Lines on the Road
+# **Finding Lane Lines on the Road**
 
-Writeup Template
+## The goals / steps of this project are the following:
 
-You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+The goal of the project is to find the lane lines in front of
+us on a video file and paint them.
 
-Finding Lane Lines on the Road
-
-The goals / steps of this project are the following:
-
-Make a pipeline that finds lane lines on the road
-Reflect on your work in a written report
-Reflection
-
-1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### Pipeline
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I ....
 
