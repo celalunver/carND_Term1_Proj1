@@ -1,4 +1,7 @@
 # **Finding Lane Lines on the Road**
+[//]: # (Image References)
+
+[image1]: ./examples/grayscale.jpg "Grayscale"
 
 ## The goals / steps of this project are the following:
 
@@ -8,6 +11,8 @@ us on a video file and paint them.
 ### Pipeline
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I ....
+
+![alt text][image1]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
