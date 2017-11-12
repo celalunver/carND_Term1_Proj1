@@ -10,20 +10,23 @@ us on a video file and paint them.
 
 ### Pipeline
 
-My pipeline consisted of 5 steps. 
-1 - First, I converted the images to grayscale, 
-2 - then I apply gaussian blur to this grayed image
-3 - As the third i find the edges by applying Canny edge detection algorithm
-4 - Then i mask the image where only the region of interest i have selected left
-5 - Then i apply Hough transform and draw the extrapolated lines using my own draw_lines() function
+My pipeline consisted of 5 steps.
 
-![alt text][image1]
+1 - First, I converted the images to grayscale, 
+
+2 - then I apply gaussian blur to this grayed image
+
+3 - As the third i find the edges by applying Canny edge detection algorithm
+
+4 - Then i mask the image where only the region of interest i have selected left
+
+5 - Then i apply Hough transform and draw the extrapolated lines using my own draw_lines() function
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by first finding the line slopes and then divide those lines to two, where minus slope lines will be on the left lane and plus slope ones will be on the right.
 
 Then i found an average point in the middle somewhere using all those lines starting and end points. Then using extrapolating ("average left slope" value and bottom and top intersection points (bottom is chosen as y_max = 539, top is chosen as y_min = vertice value + 20) Vertice value is taken from the area of interest)
 
-I have applied several versions of this method to sample pictures
+I have applied several versions of this method to sample pictures. Now i have concentrated on videos and focused on fine tuning parameters according to videos. So, no picture is included in this report.
 
 2. Identify potential shortcomings with your current pipeline
 
